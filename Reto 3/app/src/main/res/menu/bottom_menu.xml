@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_new_game"   android:icon="@drawable/ic_refresh" android:title="@string/menu_new_game"/>
+    <item android:id="@+id/nav_difficulty" android:icon="@drawable/ic_tune"    android:title="@string/menu_ai_difficulty"/>
+    <item android:id="@+id/nav_quit"       android:icon="@drawable/ic_power"   android:title="@string/menu_quit"/>
+</menu>
