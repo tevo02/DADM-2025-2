@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Contenedor central que ocupa el espacio disponible y centra su contenido -->
+    <LinearLayout
+        android:id="@+id/center_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Tablero más pequeño y centrado -->
+
+        <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Empiezas Tú"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="casual"    />
+
+        <!-- Marcador: Humano | Empates | Máquina -->
+        <LinearLayout
+            android:id="@+id/score_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_score_human"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganados: 0"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_score_ties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empates: 0"
+                android:textColor="@android:color/white"
+                android:paddingEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_score_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Máquina: 0"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Dificultad actual -->
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dificultad: Fácil"
+            android:textColor="@android:color/white"
+            android:paddingBottom="8dp"/>
+
+        <co.edu.unal.tictactoe.harding.BoardView
+            android:id="@+id/board"
+            android:layout_width="356dp"
+            android:layout_height="358dp"
+            android:layout_marginTop="12dp"/>
+
+
+    </LinearLayout>
+
+    <!-- Menú inferior fijo al fondo -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_menu"/>
+</LinearLayout>
