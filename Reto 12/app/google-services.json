@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13889885528",
+    "project_id": "auth-e71d5",
+    "storage_bucket": "auth-e71d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13889885528:android:0cff568543feac4748412d",
+        "android_client_info": {
+          "package_name": "com.example.reto12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13889885528-m4sbtrpst9iemqq5pig0eghkq9nivsla.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reto12",
+            "certificate_hash": "5aa58b11ee779cddf4a9e8e04de20d8355bcdb7c"
+          }
+        },
+        {
+          "client_id": "13889885528-jegc8t3l5o1ctf3e5bnp5mem2o3puqh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmSAjWXjwWQFU6RabKbQ8D3CnkpIykRTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13889885528-jegc8t3l5o1ctf3e5bnp5mem2o3puqh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
